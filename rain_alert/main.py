@@ -1,4 +1,4 @@
-api_key = "af6d464f492b495f58f38978993a44c9"
+api_key = "YOUR_api_key"
 import requests
 my_lat = 28.6667
 my_long = 77.2167
@@ -12,8 +12,8 @@ parameters = {
 
 def telegram_bot_sendtext(bot_message):
     
-    bot_token = '8105276632:AAGqnqIHcAxJjVtqmX-ZwAXWLaQ8aIjGub4'
-    bot_chatID = '6247095465'
+    bot_token = 'Your_bot_token'
+    bot_chatID = 'Your_bot_chatID'
     send_text = 'https://api.telegram.org/bot' + bot_token + '/sendMessage?chat_id=' + bot_chatID + '&parse_mode=Markdown&text=' + bot_message
 
     response = requests.get(send_text)
